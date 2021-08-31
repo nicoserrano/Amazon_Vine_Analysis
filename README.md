@@ -26,7 +26,7 @@ The first step was to extract the dataset from an AWS S3 using PySpark in order 
 ![Screen Shot 2021-08-31 at 2 43 22 PM](https://user-images.githubusercontent.com/83378141/131558556-4a9c1b23-8db8-49f9-a7ab-f2a7c91870df.png)
 ![Screen Shot 2021-08-31 at 2 43 29 PM](https://user-images.githubusercontent.com/83378141/131558568-a8515ae2-b3f7-4062-9dfb-64eaf785e49e.png)
 
-Due to the size of the dataframes it took some time to load to PostgreSQL and the RDS. 
+Due to the size of the dataframes it took some time to load to PostgreSQL and the RDS. I then did a few quick queries to check that everything ran smoothly. 
 
 <img width="745" alt="Screen Shot 2021-08-29 at 10 21 45 PM" src="https://user-images.githubusercontent.com/83378141/131558905-90cc438b-fd27-476c-808f-95096f8b9dcb.png">
 <img width="743" alt="Screen Shot 2021-08-29 at 10 47 21 PM" src="https://user-images.githubusercontent.com/83378141/131558907-b7ba32fc-1752-4fcb-8d4f-9da12cac9ceb.png">
