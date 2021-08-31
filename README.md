@@ -17,7 +17,7 @@ The objective of this project was to familiarize myself with Spark. Apache Spark
   - AWS S3 and RDS 
   - PostgreSQL
 
-## Results
+## Roadmap
 
 The first step was to extract the dataset from an AWS S3 using PySpark in order to transform it and load it to AWS again. Please refer to [Amazon_Reviews_ETL.ipynb](https://github.com/nicoserrano/Amazon_Vine_Analysis/blob/main/Amazon_Reviews_ETL.ipynb) to see the code. Note that I downloaded it as a jupyter notebook file, but it was originally created in Google Colab for PySpark to run. There, I basically divided the whole dataframe into 4 smaller dataframes for better analysis. These dataframes were then loaded to AWS RDS using a a connection from PySpark to PostgreSQL. 
 
@@ -33,5 +33,23 @@ Due to the size of the dataframes it took some time to load to PostgreSQL and th
 <img width="740" alt="Screen Shot 2021-08-29 at 11 21 27 PM" src="https://user-images.githubusercontent.com/83378141/131558908-a2c084ee-6702-42b7-9355-22e2bab1c772.png">
 <img width="741" alt="Screen Shot 2021-08-29 at 11 25 19 PM" src="https://user-images.githubusercontent.com/83378141/131558909-3b5a6ef3-c351-4824-bfcb-5d562faec371.png">
 
-And lastly, I worked with the last table called `vine_table` to perform the Vine program analysis to filter the best reviews, and see if there were significantly more 5-star reviews in the paid and incentivized (vine) program. Please refer to the [Amazon_Vine_Analysis.ipynb](https://github.com/nicoserrano/Amazon_Vine_Analysis/blob/main/Vine_Review_Analysis.ipynb) 
+And lastly, I worked with the last table called `vine_table` to perform the Vine program analysis to filter the best reviews, and see if there were significantly more 5-star reviews in the paid and incentivized (vine) program. The best reviews were those that were highly voted as helpful. Then, I filtered to see which of those were part of the vine program and which were not. Please refer to the [Amazon_Vine_Analysis.ipynb](https://github.com/nicoserrano/Amazon_Vine_Analysis/blob/main/Vine_Review_Analysis.ipynb) 
+
+## Results
+- Paid Vine Program
+  - 33 total reviews
+  - 15 5-star reviews
+  - ***45.5%*** of vine reviews were 5-star
+
+- Unpaid reviews
+  - 45,388 total reviews
+  - 23,733 5-star reviews
+  - ***52.3%*** of unpaid reviews were 5-star
+
+
+## Summary
+
+In conclusion, the vine program might just not be worth it for the apparel category. As it can be seen, there were not many helpful reviews that made part of it (total of 33), and only around half of them were 5-star rated (45%). Very similarly to the unpaid reviews which also only half of them were 5 star rated (52%). Even though the percentages may be misleading as the quantity of helpful reviews varies so much. This, itself, is a sign that the vine program is not very popular in this category. We might not want to pay for the vine program if it is not incentivizing the people to write better reviews. 
+
+The results don't happen to show that there is any positivity bias towards the reviews in the vine program. 
 
