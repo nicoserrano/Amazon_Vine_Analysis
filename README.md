@@ -18,3 +18,20 @@ The objective of this project was to familiarize myself with Spark. Apache Spark
   - PostgreSQL
 
 ## Results
+
+The first step was to extract the dataset from an AWS S3 using PySpark in order to transform it and load it to AWS again. Please refer to [Amazon_Reviews_ETL.ipynb](https://github.com/nicoserrano/Amazon_Vine_Analysis/blob/main/Amazon_Reviews_ETL.ipynb) to see the code. Note that I downloaded it as a jupyter notebook file, but it was originally created in Google Colab for PySpark to run. There, I basically divided the whole dataframe into 4 smaller dataframes for better analysis. These dataframes were then loaded to AWS RDS using a a connection from PySpark to PostgreSQL. 
+
+![Screen Shot 2021-08-31 at 2 43 06 PM](https://user-images.githubusercontent.com/83378141/131558534-69e6fe25-e811-49ae-97dc-bd1011f77c6c.png)
+![Screen Shot 2021-08-31 at 2 43 14 PM](https://user-images.githubusercontent.com/83378141/131558546-f15f0f5b-6254-4022-8b61-2f3bfde8ea13.png)
+![Screen Shot 2021-08-31 at 2 43 22 PM](https://user-images.githubusercontent.com/83378141/131558556-4a9c1b23-8db8-49f9-a7ab-f2a7c91870df.png)
+![Screen Shot 2021-08-31 at 2 43 29 PM](https://user-images.githubusercontent.com/83378141/131558568-a8515ae2-b3f7-4062-9dfb-64eaf785e49e.png)
+
+Due to the size of the dataframes it took some time to load to PostgreSQL and the RDS. 
+
+<img width="745" alt="Screen Shot 2021-08-29 at 10 21 45 PM" src="https://user-images.githubusercontent.com/83378141/131558905-90cc438b-fd27-476c-808f-95096f8b9dcb.png">
+<img width="743" alt="Screen Shot 2021-08-29 at 10 47 21 PM" src="https://user-images.githubusercontent.com/83378141/131558907-b7ba32fc-1752-4fcb-8d4f-9da12cac9ceb.png">
+<img width="740" alt="Screen Shot 2021-08-29 at 11 21 27 PM" src="https://user-images.githubusercontent.com/83378141/131558908-a2c084ee-6702-42b7-9355-22e2bab1c772.png">
+<img width="741" alt="Screen Shot 2021-08-29 at 11 25 19 PM" src="https://user-images.githubusercontent.com/83378141/131558909-3b5a6ef3-c351-4824-bfcb-5d562faec371.png">
+
+And lastly, I worked with the last table called `vine_table` to perform the Vine program analysis to filter the best reviews, and see if there were significantly more 5-star reviews in the paid and incentivized (vine) program. Please refer to the [Amazon_Vine_Analysis.ipynb](https://github.com/nicoserrano/Amazon_Vine_Analysis/blob/main/Vine_Review_Analysis.ipynb) 
+
