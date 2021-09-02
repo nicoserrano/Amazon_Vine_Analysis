@@ -49,7 +49,9 @@ And lastly, I worked with the last table called `vine_table` to perform the Vine
 
 ## Summary
 
-In conclusion, the vine program might just not be worth it for the apparel category. As it can be seen, there were not many helpful reviews that made part of it (total of 33), and only around half of them were 5-star rated (45%). Very similarly to the unpaid reviews which also only half of them were 5 star rated (52%). Even though the percentages may be misleading as the quantity of helpful reviews varies so much. This, itself, is a sign that the vine program is not very popular in this category. We might not want to pay for the vine program if it is not incentivizing the people to write better reviews. 
+In conclusion, the vine program might just not be worth it for the apparel category. As it can be seen, there were not many helpful reviews that made part of it (total of 33), and only around half of them were 5-star rated (45%). Very similarly to the unpaid reviews which also only half of them were 5 star rated (52%). Even though the percentages may be misleading as the volume of reviews in the vine and non-vine programs vary so much, this itself is a sign that the vine program is not very popular in this category. We might not want to pay for it as it is not incentivizing the people to write better reviews. 
 
-The results don't happen to show that there is any positivity bias towards the reviews in the vine program. 
+This allows us to conclude that customers don't feel a positivity bias for leaving good reviews in the paid program as there are so few and not so many well-rated. To 
+
+
 
