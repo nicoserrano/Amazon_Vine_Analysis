@@ -55,6 +55,6 @@ This allows us to conclude that customers don't feel a positivity bias for leavi
 
 ![Screen Shot 2021-09-02 at 1 10 18 PM](https://user-images.githubusercontent.com/83378141/131887983-807ac118-b426-4db4-af18-209d85d2d80b.png)
 
-In fact, there is a slight 0.2 difference in the average review star-rating in favor of the vine program. However, there is still not enough information to enroll in it. A great recommendation would be to apply a NLP sentiment analysis to check for the words used in the majority of the reviews. This way we could see if vine reviews are more touching or detailed. 
+In fact, there is a slight 0.2 difference in the average review star-rating in favor of the vine program. However, there is still not enough information to enroll in it. A great recommendation would be to apply a NLP sentiment analysis to check for the words used in the majority of the reviews. This way we could see if vine reviews are more touching and detailed, that we can feel customers have an incentive to leave great reviews.
 
 
